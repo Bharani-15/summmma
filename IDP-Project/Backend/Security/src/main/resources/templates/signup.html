@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>luv2ode LEADERS Home Page</title>
+</head>
+<body>
+<h2>luv2code LEADERS Home Page</h2>
+
+<hr>
+<p>
+	<form action="#" th:action="@{/registerTheUser}" method="POST" class="form-horizontal">
+		<div style="margin-bottom: 25px;" class="input-group">
+		     <input type="text" name="username" placeholder="username" class="form-control" />
+		</div>
+		 
+		 <div style="margin-bottom: 25px;" class="input-group">
+		      <input type="password" name="password" placeholder="password" class="form-control" />
+		 </div>
+		 
+		 <div style="margin-bottom: 25px;" class="input-group">
+		 	      <input type="text" name="role" placeholder="role" class="form-control" />
+		 	 </div>
+		 
+		 <div style="margin-top: 10px;" class="form-group">
+		     <div class="col-sm-6 controls">
+		          <button type="submit" class="btn btn-success">Login</button>
+		     </div>
+		 </div>
+	</form>
+</p>
+<hr>
+<a th:href="@{/}">Back to Home Page</a>
+</body>
+</html>
