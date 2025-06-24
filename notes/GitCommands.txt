@@ -1,0 +1,50 @@
+TERMINAL COMMANDS:
+1.ls - to list 
+2.ls.folder name/ - to list the folder files.
+3.start .- to open
+4.start .folder name - to open the folder
+5.pwd - print working directory
+6.cd - to navigate
+7.cd .. - to navigate backwards.
+8.touch plan.txt demo.js summa.pdf - to create files 
+9.touch documents/agile/agile.txt - to create file in the given path
+10.mkdir bikes cars - to create folders named bikes and cars
+11.rm plain.txt summa.txt - it deletes the given file permanently.
+12.rm -rf bikes cars - it will delete the given folders.
+13.clear - it will clear the current tab
+14. ls -a - it will list the hidden folders
+
+GIT COMMANDS:
+1.git status - it gives the status of the currently working repository
+2.git init - it instantiate or initialize a repository in whatever directory we're currently in
+3.a project folder should have one repo which is one .git folder is tracking them . there should be no two .git folder for a single project folder.
+4. basic git workflow -> WORK ON STUFF(creating or editing files) -> ADD CHANGES (group specific changes together) -> COMMIT
+5.git add filename1 filename2 - it add the files to staging area and then it can be commited.
+6.git commit -m "message" - it will commit the staged files together with a message.
+7.git log - it retrives info about commits that are done in the repo.
+8.git add . - it stage the all the modified at once.
+9.Atomic commits - keeping each commit focused on a single thing.
+10.git log --oneline - it displays the logs in one line.
+11. git commit -m "message"
+    git add forgotten_file  -> amending commits - it is used to include file changes that we forgot and to redo the commit message at the same time.
+    git commit --amend
+12. .gitignore - it is a folder which has files and directory that should not be tracked by git.
+13. Head - it is a term which is refer to the current branch that we are working.
+14.git branch - it shows all the branches.
+15. git branch branchName - it creates a branch which will refer the most recent commit.
+16. git switch branchName - it is used to switch between branches.
+17. git commit -a -m "message" - it do the both git add and git commit work.
+18. git checkout branchName - it is same as git switch breanchName command
+19. git switch -c branchName- it create and switch to the created branch at the same time
+20. git branch -D branchName - it deletes the branch irrespective of the merge status of the branch
+21. git branch -v - it gives the list of branches with their last commits.
+22. git merge branchName (fast forward merge)- it merges current branch with the given branchName.so that the current branch has the commits of the 
+    given branch
+23. for non-straight forward message we csn use fast forward merge method but the editor will ask for a message to create a new commit automatically 
+    to merge the current branch and the given branch.
+24. git diff - it shows the changes that are not staged for the next commit.
+25.git diff HEAD fileName1 fileName2 - it will lists the all the changes in the working directory since your last commit.
+26.git diff --staged fileName1 fileName2 - it will only show the staged changes.
+27.git diff branch1 branch2 - it shows the changes between branch1 & branch2
+28.git diff commit1 commit2 - it shows the changes between commits.
+    
